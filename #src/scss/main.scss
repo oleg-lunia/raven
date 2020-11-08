@@ -12,30 +12,30 @@
 
 
 
-$color: #99286b;
-
-
-
 // Настройка главной страгицы header
 
 .preview {
     height: 100vh;
-    width: 100%;
-    background-image: url("../media/home/Layer\ 22@3x.jpg");
+    background-image: url("../media/home/Layer22@3x.jpg");
     background-size: cover;
     background-position: bottom;
+    position: relative;
 
-    .home-item {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    .container-header {
+        padding-top: 78px;
+    }
+
+    .home {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         color: white;
-        padding: 0;
+        text-align: center;
 
         h2 {
             font-size: 48px;
-            margin-top: 33vh;
-            margin-bottom: 0;
+            margin: 0;
         }
         p {
             font-size: 24px;
@@ -65,44 +65,31 @@ $color: #99286b;
     width: 100%;
     padding-top: 58px;
     padding-bottom: 85px;
-    .services-header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        span {
-            display: block;
-            height: 2px;
-            width: 70px;
-            background-color: $color;
-        }
-        p {
-            text-align: center;
-            max-width: 890px;
-            padding-top: 18px;
-            line-height: 1.7;
-        }
+    p {
+        text-align: center;
+        max-width: 890px;
+        line-height: 1.7;
+        margin: 0 auto;
+        margin-top: 61px;
     }
     .services-block {
-        max-width: 1170px;
-        margin: 0 auto;
         display: flex;
-        margin-top: 18px;
-        .services-picture {
-            img {
-                max-width: 372px;
-            }
+        margin-top: 34px;
+        img {
+            max-width: 372px;
+            margin-right: 28px;
         }
         .services-group{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
+            align-items: flex-end;
             .services-item {
                 height: 192px;
                 width: 170px;
                 border: solid 1px #e6e6e6;
                 border-radius: 3px;
                 box-sizing: border-box;
-                margin: 17px 0 0 27px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -115,7 +102,6 @@ $color: #99286b;
                 h4 {
                     font-family: "OpenSans-Semibold", sans-serif;
                     font-size: 14px;
-                    text-transform: uppercase;
                     width: 93px;
                     text-align: center;
                 }
@@ -130,45 +116,48 @@ $color: #99286b;
     background-color: #f6f6f6;
     padding-top: 52px;
     padding-bottom: 56px;
-    .projects-header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        span {
-            display: block;
-            height: 2px;
-            width: 70px;
-            background-color: $color;
-        }
-    }
+    margin-bottom: 83px;
+
     .projects-gallery {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 52px;
+        margin-top: 80px;
+        margin-bottom: 55px;
         .gallery-item {
             height: 240px;
             width: 240px;
             position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .gallery-zoom {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 240px;
+                width: 240px;
+                background-color: $color;
+                opacity: 0.7;
+                cursor: pointer;
+                z-index: -5;
+                svg {
+                    height: 25px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
         }
-        .gallery-item:hover::after {
-            content: "";
-            position: absolute;
-            display: block;
-            height: 240px;
-            width: 240px;
-            background-color: $color;
-            opacity: 0.7;
-            top: 0;
-            left: 0;
-            cursor: pointer;
-            background-image:url("../media/home/icon/search-plus-solid.svg");
-            background-size: 25px;
-            background-repeat: no-repeat;
-            background-position: center;
+        .gallery-item:hover {
+            .gallery-zoom {
+                z-index: 5;
+            }
         }
     }
     .projects-button {
-        padding-top: 55px;
         display: flex;
         justify-content: center;
         button {
@@ -193,29 +182,22 @@ $color: #99286b;
 
 
 .testimonials {
-    background-color: #fff;
-    padding-top: 59px;
-    padding-bottom: 56px;
-    .testimonials-header {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        span {
-            display: block;
-            height: 2px;
-            width: 70px;
-            background-color: $color;
-        }
-    }
     .slider {
-        max-width: 1170px;
-        margin: 0 auto;
+        margin-top: 86px;
         .slider_item {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding-top: 58px;
+            .slider-header {
+                max-width: 124px;
+                max-height: 92px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             p {
                 line-height: 1.7;
                 padding-top: 10px;
@@ -233,6 +215,11 @@ $color: #99286b;
         width: 45px;
         z-index: 15;
     }
+    .slider .slick-next::before,
+    .slider .slick-prev::before {
+        content: "";
+    }
+
     
     .slider .slick-next{
         background-image: url("../media/home/icon/sl-arrow_r.svg");
@@ -240,7 +227,7 @@ $color: #99286b;
         background-position: center;
         right: -3%;
         position: absolute;
-        top:55%;
+        top: 40%;
     }
     
     .slider .slick-prev {
@@ -249,24 +236,23 @@ $color: #99286b;
         background-position: center;
         left: -3%;
         position: absolute;
-        top:55%;
+        top: 40%;
     }
 }
 
 // Настройка блока с картинками брендами
-
+.container-brands {
+    margin-top: 125px;
+}
 .brands {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding-bottom: 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 34px;
     cursor: pointer;
     .brands-logo {
         width: 170px;
         height: 132px;
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -278,19 +264,21 @@ $color: #99286b;
     }
 }
 
-// Настройка футера
+// Настройка карты
 
+.map {
+    iframe {
+        width: 100%;
+        height: 370px;
+        border: none;
+    }
+}
+
+// Настройка футера
 
 footer {
     background-color: #2c2c2c;
-    width: 100%;
-    .map {
-        iframe {
-            width: 100%;
-            height: 370px;
-            border: none;
-        }
-    }
+    
     .footer-items {
         max-width: 1170px;
         height: 60px;
@@ -298,53 +286,348 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .copyright {
+        p {
             flex-grow: 6;
-            p {
-                font-size: 12px;
-                margin: 0;
-                color: #fff;
-                a {
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    color: $color;
-                }
+            font-size: 12px;
+            margin: 0;
+            text-align: start;
+            color: #fff;
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $color;
             }
         }
-        .social {
+        
+        ul {
             flex-grow: 1;
-            ul {
-                list-style: none;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0;
-                margin: 0;
-                li {
-                    a {
-                        cursor: pointer;
-                        svg {
-                            height: 16px;
-                            fill: #fff;
-                        }
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            li {
+                a {
+                    padding: 5px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    svg {
+                        height: 16px;
+                        fill: #fff;
                     }
                 }
+                a:hover {
+                    background-color: $color;
+                    border-radius: 3px;
+                }
+            }
+        }    
+        
+        button {
+            width: 40px;
+            height: 60px;
+            transition: 00.5s;
+            svg {
+                height: 16px;
             }
         }
-        .up {
-            margin-left: 32px;
-            button {
-                width: 40px;
-                height: 60px;
-                background-image: url("../media/home/icon/up.svg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 16px;
-                cursor: pointer;
-            }
-            button:hover {
-                background-color: $color;
-            }
-        }
+        button:hover {
+            background-color: $color;
+        }   
+            
     } 
 }
+
+
+
+// Настройка страницы ABOUT!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.page-header {
+    padding: 50px 0 50px 0;
+    background-color: #323232;
+}
+
+
+// Настройка секции welcome
+
+.welcome {
+    padding-top: 11vh;
+    padding-bottom: 11vh;
+    p {
+        max-width: 882px;
+        text-align: center;
+        line-height: 1.7;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+}
+
+// Настройка секции believe
+
+.believe {
+    background-color:#fbfbfb;
+    padding-top: 40px;
+    .believe-group {
+        display: flex;
+        img {
+            margin: 0 47px 0 18px;
+        }
+        .believe-content {
+            h3 {
+                padding-top: 30px;
+            }
+            span {
+                display: block;
+                height: 2px;
+                width: 70px;
+                background-color: $color;
+            }
+            p {
+                margin: 34px 0 42px 0px;
+                text-align: justify;
+                line-height: 1.85;
+                overflow-wrap: normal;
+            }
+            img {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+// Настройка секции choose!!
+
+
+.choose {
+    padding: 72px 0 98px 0;
+    p {
+        margin-top: 60px;
+        max-width: 882px;
+        margin-bottom: 46px;
+    }
+    .choose-group {
+        display: flex;
+        justify-content: space-between;
+        .choose-item {
+            width: 270px;
+            height: 246px;
+            background-color: #99286b;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            svg {
+                fill: #fff;
+            }
+            h4 {
+                font-family: "OpenSans-Semibold", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Настройка about-testimonials!!!
+
+.about-testimonials {
+    // background-color: #434343;
+    background-image: url("../media/about/about-test@3x.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    padding: 55px 0 100px 0;
+
+    .section-header::after {
+        background-color: #fff;
+    }
+
+    .slider .slick-next{
+        right: 7%;
+        top: 48%;
+    }
+    
+    .slider .slick-prev {
+        left: 7%;
+        top: 48%;
+    }
+
+}
+
+// Настройка секции meet our team!!!
+.team {
+    padding: 77px 0 80px 0;
+    .team-gallery {
+        margin-top: 80px;
+        display: grid;
+        grid-template-rows:  180px 180px;
+        grid-template-columns: 180px 180px 200px 200px 180px 180px;
+        gap: 10px 10px;
+    
+        .team-item1,
+        .team-item2,
+        .team-item3,
+        .team-item4,
+        .team-item5,
+        .team-item6,
+        .team-item7,
+        .team-item8,
+        .team-item9 {
+            position: relative;
+        }
+    
+        .team-item1 {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+        
+        .team-item2 {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+        
+        .team-item3 {
+            grid-row: 1 / 3;
+            grid-column: 3 / 5;
+            .team-item3-bgr {
+                list-style: none;
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                padding: 170px 171px 169px 171px;
+                margin: 0;
+                transition: 0.5s;
+                svg {
+                    height: 28px;
+                }
+            }
+            .team-item3-bgr:hover {
+                background-color: $color;
+                opacity: 0.7;
+            }
+        }
+        
+        .team-item4 {
+            grid-row: 1 / 2;
+            grid-column: 5 / 6;
+        }
+        
+        .team-item5 {
+            grid-row: 1 / 2;
+            grid-column: 6/7;
+        }
+        
+        .team-item6 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        
+        .team-item7 {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+        
+        .team-item8 {
+            grid-row: 2 / 3;
+            grid-column: 5 / 6;
+        }
+    
+        .team-item9 {
+            grid-row: 2 / 3;
+            grid-column: 6 / 7;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        svg {
+            height: 16px;
+            fill: #fff;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            padding: 81px 66px 80px 67px;
+            margin: 0;
+            transition: 0.5s;
+            
+            a {
+                padding: 5px;
+            }
+        }
+        ul:hover {
+            background-color: $color;
+            opacity: 0.7;
+        }
+    }
+}
+.about-brands {
+    margin-top: 94px;
+}
+
+
+
+// НАСТРОЙКА СТРАНИЦЫ projects !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.page-projects {
+    padding: 76px 0 105px 0;
+    p {
+        margin-top: 60px;
+        max-width: 882px;
+    }
+    .button-projects {
+        margin-top: 62px;
+        text-align: center;
+        button {
+            margin: 0 2px;
+            font-size: 13px;
+            color: #fff;
+            background-color: $color;
+            border: solid 1px $color;
+            border-radius: 3px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+        button + button {
+            padding: 16px 26px 16px 26px;
+            text-transform: capitalize;
+        }
+        button:first-child {
+            padding: 16px 44px 16px 44px;
+        }
+        button:focus {
+            background-color: transparent;
+            color: $color;
+        }
+    }
+    .page-projects-gallery {
+        margin-top: 34px;
+        display: flex;
+        flex-wrap: wrap;
+        .page-projects-item {
+            height: 292px;
+            width: 292px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// .projects-brands {
+//     margin-top: 125px;
+// }

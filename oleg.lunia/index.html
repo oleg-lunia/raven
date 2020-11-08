@@ -10,28 +10,27 @@
 
 <body>
     <div class="preview">
-        <header>
-            <div class="menu">
-                <nav>
-                    <a class="logo" href="./index.html"><img src="./media/home/icon/Vector Smart Object@1x.png"
-                            alt="logo">RAVEN</a>
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <form class="menu-form">
-                            <input class="menu-search" type="search" aria-label="Search">
-                        </form>
-                    </div>
-                </nav>
+        <div class="container">
+            <div class="container-header">
+                <header>
+    <a class="logo" href="./index.html"><img src="./media/home/icon/Vector Smart Object@1x.png" alt="logo">RAVEN</a>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <form class="menu-form">
+            <input class="menu-search" type="search" aria-label="Search">
+        </form>
+    </nav>
+</header>
             </div>
-        </header>
+        </div>
         <section class="home">
             <div class="home-item">
                 <h2>welcome to RAVEN</h2>
@@ -40,77 +39,110 @@
             </div>
         </section>
     </div>
-
-    <section class="services">
-        <div class="services-header">
-            <h3>our services</h3>
-            <span></span>
+    <div class="container">
+        <section class="services">
+            <div class="section-header">
+                <h3>our services</h3>
+            </div>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-        </div>
-        <div class="services-block">
-            <div class="services-picture">
-                <img src="./media/home/Rectangle 26@1x.png" alt="director"></div>
-            <div class="services-group">
-                <div class="services-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.376 38.38">
-                        <path id="Pulse" class="cls-1" d="M620,1069m16.52-18.41-1.84-1.54a9.252,9.252,0,0,0,2.12-5.85,9.018,9.018,0,0,0-15.883-5.83L620,1038.46l-0.918-1.09a9.017,9.017,0,0,0-15.882,5.83,9.247,9.247,0,0,0,2.121,5.85l-1.842,1.54a11.549,11.549,0,0,1-2.679-7.39,11.42,11.42,0,0,1,19.2-8.34,11.42,11.42,0,0,1,19.2,8.34A11.544,11.544,0,0,1,636.52,1050.59ZM620,1069m-1.007-8.9-3.985-8.63-1.439,3.13H600.8v-2.4h11.231l2.97-6.47,3.709,8.03,4.847-13.57,4.432,12.01H639.2v2.4H626.315l-2.721-7.38Zm2.765,10.1h-3.516l-9.959-11.81,1.834-1.54,9.241,10.95h1.284l9.24-10.95,1.835,1.54Z" transform="translate(-600.812 -1031.81)"/>
-                      </svg>
-                      
-                    <h4>Richard McClintock</h4>
-                </div>
-                <div class="services-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.313 37.57">
-                        <path id="Compass_tool" data-name="Compass tool" class="cls-1" d="M818.794,1051.06a6,6,0,1,1,6-6A6.006,6.006,0,0,1,818.794,1051.06Zm0-9.6a3.6,3.6,0,1,0,3.6,3.6A3.6,3.6,0,0,0,818.794,1041.46Zm0.333,20.56a13.123,13.123,0,0,1-6.788-1.89l1.238-2.06a10.809,10.809,0,0,0,14.825-3.68l2.056,1.24A13.21,13.21,0,0,1,819.127,1062.02Zm0.867-25.36h-2.363v-4.8h2.363v4.8Zm-8.523,32.73-2.3-.67,4.875-16.8,2.3,0.67Zm14.571,0-4.875-16.8,2.3-.67,4.875,16.8Z" transform="translate(-809.156 -1031.84)"/>
-                      </svg>
-                    <h4>Aldus PageMaker </h4>
-                </div>
-                <div class="services-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.82 41.6">
-                        <path id="Shield" class="cls-1" d="M1004.4,1058.72m31.2,0-29.9,0h-2.6v-16.9h2.6v16.9Zm31.2,0h-2.6v-16.9h2.6v16.9Zm-15.28,13h-3.25l-12.17-6.51c-2.89-1.73-3.1-3.62-3.1-6.49h2.6c0,2.63.17,3.3,1.95,4.32l0.01,0.01,11.36,6.07h1.95l11.38-6.08c1.78-1.02,1.95-1.69,1.95-4.32h2.6c0,2.87-.21,4.76-3.1,6.49l-0.19.11Zm7.48-18.2h-18.2v-2.6h18.2v2.6Zm0,5.2h-18.2v-2.6h18.2v2.6Zm-9.1-10.4h-9.1v-2.6h9.1v2.6Zm16.9-9.1h-9.1a9.107,9.107,0,0,1-7.8-4.42,9.107,9.107,0,0,1-7.8,4.42h-9.1v-2.6h9.1a6.513,6.513,0,0,0,6.5-6.5h2.6a6.513,6.513,0,0,0,6.5,6.5h9.1v2.6Z" transform="translate(-1003.09 -1030.12)"/>
-                      </svg>
-                    <h4>typesetting industry</h4>
-                </div>
-                <div class="services-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.62 36.38">
-                        <path id="Big_Truck" data-name="Big Truck" class="cls-1" d="M1208.32,1046.2l-2.56-7.8,2.48-.81,2.55,7.8Zm7.84,0-2.55-7.8,2.47-.81,2.56,7.8Zm-6.56,23a7.8,7.8,0,1,1,7.8-7.8A7.81,7.81,0,0,1,1209.6,1069.2Zm0-13a5.2,5.2,0,1,0,5.2,5.2A5.2,5.2,0,0,0,1209.6,1056.2Zm23.4,13a7.8,7.8,0,1,1,7.8-7.8A7.81,7.81,0,0,1,1233,1069.2Zm0-13a5.2,5.2,0,1,0,5.2,5.2A5.2,5.2,0,0,0,1233,1056.2Zm-7.8-2.37-26-4.33v-16.7h41.6v2.6h-39v11.9l20.8,3.46V1038h2.6v15.83Zm15.6-.23h-2.6v-6.29l-2.24-6.71h-5.56v7.8h5.2v2.6h-7.8v-13h10.04l2.96,8.89v6.71Z" transform="translate(-1199.19 -1032.81)"/>
-                      </svg>
-                    <h4>Lorem Ipsum</h4>
-                </div>
-                <div class="services-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.407 31.21">
-                        <path id="Truck" class="cls-1" d="M624.778,1282.42h-24v-24h24v24Zm-21.6-2.4h19.2v-19.2h-19.2v19.2Zm36,2.4h-12v-2.4h9.6v-8.11l-3.142-6.29h-4.058v7.2h4.8v2.4h-7.2v-12h7.942l4.058,8.12v11.08Zm-19.2-7.2h-14.4v-2.4h14.4v2.4Zm13.2,14.4a4.8,4.8,0,0,1-4.8-4.8h2.4a2.4,2.4,0,1,0,4.8,0h2.4A4.8,4.8,0,0,1,633.178,1289.62Zm-22.8,0a4.8,4.8,0,0,1-4.8-4.8h2.4a2.4,2.4,0,1,0,4.8,0h2.4A4.8,4.8,0,0,1,610.378,1289.62Z" transform="translate(-600.781 -1258.41)"/>
-                      </svg>
-                    <h4>Letraset sheets</h4>
-                </div>
-                <div class="services-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.376 33.62">
-                        <path id="Storage_box" data-name="Storage box" class="cls-1" d="M839.2,1268.6H800.8v-14.4h38.4v14.4Zm-36-2.4h33.6v-9.6H803.2v9.6Zm32.4,21.6H804.4v-18h2.4v15.6h26.4v-15.6h2.4v18Zm-6-9.6H810.4V1271h2.4v4.8h14.4V1271h2.4v7.2Z" transform="translate(-800.812 -1254.19)"/>
-                      </svg>
-                    <h4>Bonorum et Malorum</h4>
-                </div>
-                <div class="services-item">
-                    <svg viewBox="0 0 38.38 38.38">
-                        <path fill="#99286b" id="CD" class="cls-1"
-                            d="M1020,1290.2a19.2,19.2,0,1,1,19.2-19.2A19.218,19.218,0,0,1,1020,1290.2Zm0-36a16.8,16.8,0,1,0,16.8,16.8A16.824,16.824,0,0,0,1020,1254.2Zm0,21.6a4.8,4.8,0,1,1,4.8-4.8A4.8,4.8,0,0,1,1020,1275.8Zm0-7.2a2.4,2.4,0,1,0,2.4,2.4A2.407,2.407,0,0,0,1020,1268.6Zm1.2,0h-2.4v-12h2.4v12Zm0,16.8h-2.4v-12h2.4v12Zm1.35-15.25-1.7-1.7,8.48-8.48,1.7,1.7Zm-11.88,11.88-1.7-1.7,8.48-8.48,1.7,1.7Z"
-                            transform="translate(-1000.81 -1251.81)" />
+            <div class="services-block">
+                <img src="./media/home/Rectangle 26@1x.png" alt="director">
+                <div class="services-group">
+                    <div class="services-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.376 38.38">
+                            <path id="Pulse" class="cls-1"
+                                d="M620,1069m16.52-18.41-1.84-1.54a9.252,9.252,0,0,0,2.12-5.85,9.018,9.018,0,0,0-15.883-5.83L620,1038.46l-0.918-1.09a9.017,9.017,0,0,0-15.882,5.83,9.247,9.247,0,0,0,2.121,5.85l-1.842,1.54a11.549,11.549,0,0,1-2.679-7.39,11.42,11.42,0,0,1,19.2-8.34,11.42,11.42,0,0,1,19.2,8.34A11.544,11.544,0,0,1,636.52,1050.59ZM620,1069m-1.007-8.9-3.985-8.63-1.439,3.13H600.8v-2.4h11.231l2.97-6.47,3.709,8.03,4.847-13.57,4.432,12.01H639.2v2.4H626.315l-2.721-7.38Zm2.765,10.1h-3.516l-9.959-11.81,1.834-1.54,9.241,10.95h1.284l9.24-10.95,1.835,1.54Z"
+                                transform="translate(-600.812 -1031.81)" />
+                        </svg>
+
+                        <h4>Richard McClintock</h4>
+                    </div>
+                    <div class="services-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.313 37.57">
+                            <path id="Compass_tool" data-name="Compass tool" class="cls-1"
+                                d="M818.794,1051.06a6,6,0,1,1,6-6A6.006,6.006,0,0,1,818.794,1051.06Zm0-9.6a3.6,3.6,0,1,0,3.6,3.6A3.6,3.6,0,0,0,818.794,1041.46Zm0.333,20.56a13.123,13.123,0,0,1-6.788-1.89l1.238-2.06a10.809,10.809,0,0,0,14.825-3.68l2.056,1.24A13.21,13.21,0,0,1,819.127,1062.02Zm0.867-25.36h-2.363v-4.8h2.363v4.8Zm-8.523,32.73-2.3-.67,4.875-16.8,2.3,0.67Zm14.571,0-4.875-16.8,2.3-.67,4.875,16.8Z"
+                                transform="translate(-809.156 -1031.84)" />
+                        </svg>
+                        <h4>Aldus PageMaker </h4>
+                    </div>
+                    <div class="services-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999">
+                            <path d="M459.806,26.796c-0.393-3.24-2.81-5.868-6.007-6.529C388.861,6.819,322.313,0,255.999,0
+                                C189.687,0,123.137,6.819,58.2,20.266c-3.196,0.661-5.614,3.289-6.006,6.529c-17.719,145.987-8.103,253.468,29.4,328.581
+                                c32.581,65.257,81.179,95.271,120.228,119.388c18.549,11.457,36.071,22.277,48.802,35.008c1.485,1.484,3.432,2.226,5.378,2.226
+                                s3.892-0.742,5.377-2.226c12.731-12.732,30.252-23.552,48.802-35.008c39.05-24.117,87.647-54.131,120.228-119.388
+                                C467.908,280.264,477.524,172.783,459.806,26.796z M416.8,348.584c-30.648,61.385-75.256,88.934-114.613,113.241
+                                c-16.935,10.459-33.05,20.412-46.188,32.126c-13.138-11.714-29.252-21.666-46.188-32.126
+                                c-39.357-24.306-83.964-51.856-114.612-113.241C59.529,277.14,50.176,174.227,66.641,34.064
+                                c62.226-12.515,125.9-18.857,189.358-18.857s127.132,6.342,189.359,18.857C461.823,174.227,452.47,277.14,416.8,348.584z"/>
+                            <path d="M426.519,57.712c-0.339-3.385-2.885-6.132-6.235-6.727c-22.853-4.057-46.14-7.303-69.33-9.662
+                                c-4.19-0.427-7.918,2.666-8.311,6.861v0.001c-0.389,4.169,2.665,7.85,6.83,8.275c20.881,2.126,41.838,4.98,62.477,8.51
+                                c4.909,51.284,5.949,97.457,3.138,137.684c-49.997-7.878-100.878-12.052-151.487-12.432V51.741
+                                c16.866,0.141,33.881,0.75,50.765,1.819c4.177,0.265,7.794-2.865,8.093-7.04v-0.002c0.303-4.225-2.905-7.867-7.131-8.135
+                                c-19.741-1.251-39.662-1.884-59.328-1.884c-54.877,0-110.15,4.875-164.284,14.486c-3.35,0.595-5.896,3.342-6.236,6.727
+                                c-6.368,63.332-7.026,119.321-1.955,166.408c4.867,45.195,15.205,83.871,30.724,114.955
+                                c27.942,55.964,68.006,80.707,106.752,104.636c10.784,6.66,20.97,12.951,30.617,19.754c1.314,0.927,2.848,1.39,4.382,1.39
+                                c1.534,0,3.068-0.463,4.382-1.39c9.662-6.813,19.841-13.099,30.619-19.755c38.745-23.929,78.808-48.672,106.75-104.635
+                                c15.519-31.084,25.856-69.76,30.724-114.955C433.545,177.029,432.888,121.041,426.519,57.712z M100.048,64.97
+                                c48.942-8.374,98.778-12.81,148.347-13.223v138.474c-50.61,0.38-101.49,4.555-151.487,12.433
+                                C94.097,162.428,95.139,116.257,100.048,64.97z M413.353,222.492c-4.673,43.39-14.499,80.329-29.208,109.788
+                                c-26.008,52.092-64.2,75.68-101.136,98.492c-6.675,4.121-13.117,8.11-19.406,12.19V337.516c0-4.199-3.405-7.604-7.604-7.604
+                                s-7.604,3.405-7.604,7.604v105.445c-6.285-4.078-12.728-8.067-19.405-12.191c-36.936-22.811-75.128-46.398-101.136-98.491
+                                c-14.709-29.461-24.536-66.398-29.209-109.788c-0.164-1.529-0.308-3.092-0.46-4.64c49.567-7.865,100.023-12.04,150.211-12.422
+                                v96.601c0,4.199,3.405,7.604,7.604,7.604s7.604-3.405,7.604-7.604v-96.601c50.188,0.382,100.644,4.556,150.211,12.422
+                                C413.661,219.399,413.517,220.963,413.353,222.492z"/>
                     </svg>
-                    <h4>consectetur</h4>
-                </div>
-                <div class="services-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.68 37.68">
-                        <path id="Syringe" class="cls-1" d="M1202.85,1288.85l-1.7-1.7,2.95-2.94,1.69,1.69Zm26.41-26.41-1.7-1.7,5.8-5.8,1.69,1.7Zm7.89-3.59-6-6,1.7-1.7,6,6Zm-20.46,24.64-1.7-1.7,13.29-13.28-6.79-6.79L1208.21,1275l-1.7-1.69,14.98-14.98,10.18,10.18Zm-5.62-7.37-1.99-1.99,1.69-1.7,1.99,1.99Zm3.6-3.6-1.99-1.99,1.69-1.7,1.99,1.99Zm3.6-3.6-1.99-1.99,1.69-1.7,1.99,1.99Zm-6.67,16.68a7.2,7.2,0,0,1-5.09-12.29l1.7,1.69a4.8,4.8,0,1,0,6.78,6.79l1.7,1.7A7.2,7.2,0,0,1,1211.6,1285.6Z" transform="translate(-1201.16 -1251.16)"/>
-                      </svg>
-                    <h4>Hampden Sydney</h4>
+                        <h4>typesetting industry</h4>
+                    </div>
+                    <div class="services-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.62 36.38">
+                            <path id="Big_Truck" data-name="Big Truck" class="cls-1"
+                                d="M1208.32,1046.2l-2.56-7.8,2.48-.81,2.55,7.8Zm7.84,0-2.55-7.8,2.47-.81,2.56,7.8Zm-6.56,23a7.8,7.8,0,1,1,7.8-7.8A7.81,7.81,0,0,1,1209.6,1069.2Zm0-13a5.2,5.2,0,1,0,5.2,5.2A5.2,5.2,0,0,0,1209.6,1056.2Zm23.4,13a7.8,7.8,0,1,1,7.8-7.8A7.81,7.81,0,0,1,1233,1069.2Zm0-13a5.2,5.2,0,1,0,5.2,5.2A5.2,5.2,0,0,0,1233,1056.2Zm-7.8-2.37-26-4.33v-16.7h41.6v2.6h-39v11.9l20.8,3.46V1038h2.6v15.83Zm15.6-.23h-2.6v-6.29l-2.24-6.71h-5.56v7.8h5.2v2.6h-7.8v-13h10.04l2.96,8.89v6.71Z"
+                                transform="translate(-1199.19 -1032.81)" />
+                        </svg>
+                        <h4>Lorem Ipsum</h4>
+                    </div>
+                    <div class="services-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.407 31.21">
+                            <path id="Truck" class="cls-1"
+                                d="M624.778,1282.42h-24v-24h24v24Zm-21.6-2.4h19.2v-19.2h-19.2v19.2Zm36,2.4h-12v-2.4h9.6v-8.11l-3.142-6.29h-4.058v7.2h4.8v2.4h-7.2v-12h7.942l4.058,8.12v11.08Zm-19.2-7.2h-14.4v-2.4h14.4v2.4Zm13.2,14.4a4.8,4.8,0,0,1-4.8-4.8h2.4a2.4,2.4,0,1,0,4.8,0h2.4A4.8,4.8,0,0,1,633.178,1289.62Zm-22.8,0a4.8,4.8,0,0,1-4.8-4.8h2.4a2.4,2.4,0,1,0,4.8,0h2.4A4.8,4.8,0,0,1,610.378,1289.62Z"
+                                transform="translate(-600.781 -1258.41)" />
+                        </svg>
+                        <h4>Letraset sheets</h4>
+                    </div>
+                    <div class="services-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.376 33.62">
+                            <path id="Storage_box" data-name="Storage box" class="cls-1"
+                                d="M839.2,1268.6H800.8v-14.4h38.4v14.4Zm-36-2.4h33.6v-9.6H803.2v9.6Zm32.4,21.6H804.4v-18h2.4v15.6h26.4v-15.6h2.4v18Zm-6-9.6H810.4V1271h2.4v4.8h14.4V1271h2.4v7.2Z"
+                                transform="translate(-800.812 -1254.19)" />
+                        </svg>
+                        <h4>Bonorum et Malorum</h4>
+                    </div>
+                    <div class="services-item">
+                        <svg viewBox="0 0 38.38 38.38">
+                            <path fill="#99286b" id="CD" class="cls-1"
+                                d="M1020,1290.2a19.2,19.2,0,1,1,19.2-19.2A19.218,19.218,0,0,1,1020,1290.2Zm0-36a16.8,16.8,0,1,0,16.8,16.8A16.824,16.824,0,0,0,1020,1254.2Zm0,21.6a4.8,4.8,0,1,1,4.8-4.8A4.8,4.8,0,0,1,1020,1275.8Zm0-7.2a2.4,2.4,0,1,0,2.4,2.4A2.407,2.407,0,0,0,1020,1268.6Zm1.2,0h-2.4v-12h2.4v12Zm0,16.8h-2.4v-12h2.4v12Zm1.35-15.25-1.7-1.7,8.48-8.48,1.7,1.7Zm-11.88,11.88-1.7-1.7,8.48-8.48,1.7,1.7Z"
+                                transform="translate(-1000.81 -1251.81)" />
+                        </svg>
+                        <h4>consectetur</h4>
+                    </div>
+                    <div class="services-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.68 37.68">
+                            <path id="Syringe" class="cls-1"
+                                d="M1202.85,1288.85l-1.7-1.7,2.95-2.94,1.69,1.69Zm26.41-26.41-1.7-1.7,5.8-5.8,1.69,1.7Zm7.89-3.59-6-6,1.7-1.7,6,6Zm-20.46,24.64-1.7-1.7,13.29-13.28-6.79-6.79L1208.21,1275l-1.7-1.69,14.98-14.98,10.18,10.18Zm-5.62-7.37-1.99-1.99,1.69-1.7,1.99,1.99Zm3.6-3.6-1.99-1.99,1.69-1.7,1.99,1.99Zm3.6-3.6-1.99-1.99,1.69-1.7,1.99,1.99Zm-6.67,16.68a7.2,7.2,0,0,1-5.09-12.29l1.7,1.69a4.8,4.8,0,1,0,6.78,6.79l1.7,1.7A7.2,7.2,0,0,1,1211.6,1285.6Z"
+                                transform="translate(-1201.16 -1251.16)" />
+                        </svg>
+                        <h4>Hampden Sydney</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="projects">
-        <div class="projects-header">
+        <div class="section-header">
             <h3>our projects</h3>
-            <span></span>
         </div>
         <div class="projects-gallery">
             <div class="gallery-item">
@@ -121,6 +153,15 @@
                     <img srcset="./media/home/Rectangle1/Rectangle1@2x.jpg 2x, ./media/home/Rectangle1/Rectangle1@3x.jpg 3x"
                         src="./media/home/Rectangle1/Rectangle1@1x.jpg" alt="Rectangle">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -130,6 +171,15 @@
                     <img srcset="./media/home/Rectangle2/Rectangle2@2x.jpg 2x, ./media/home/Rectangle2/Rectangle2@3x.jpg 3x"
                         src="./media/home/Rectangle2/Rectangle2@1x.jpg" alt="Rectangle">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -139,6 +189,15 @@
                     <img srcset="./media/home/Rectangle3/Rectangle3@2x.jpg 2x, ./media/home/Rectangle3/Rectangle3@3x.jpg 3x"
                         src="./media/home/Rectangle3/Rectangle3@1x.jpg" alt="Rectangle">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -148,6 +207,15 @@
                     <img srcset="./media/home/Rectangle4/Rectangle4@2x.jpg 2x, ./media/home/Rectangle4/Rectangle4@3x.jpg 3x"
                         src="./media/home/Rectangle4/Rectangle4@1x.jpg" alt="Rectangle">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -157,6 +225,15 @@
                     <img srcset="./media/home/Rectangle5/Rectangle5@2x.jpg 2x, ./media/home/Rectangle5/Rectangle5@3x.jpg 3x"
                         src="./media/home/Rectangle5/Rectangle5@1x.jpg" alt="Rectangle">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -166,6 +243,15 @@
                     <img srcset="./media/home/Rectangle6/Rectangle6@2x.jpg 2x, ./media/home/Rectangle6/Rectangle6@3x.jpg 3x"
                         src="./media/home/Rectangle6/Rectangle6@1x.jpg" alt="Rectangle">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -175,6 +261,15 @@
                     <img srcset="./media/home/Rectangle7/Layer7@2x.jpg 2x, ./media/home/Rectangle7/Layer7@3x.jpg 3x"
                         src="./media/home/Rectangle7/Layer7@1x.jpg" alt="Layer">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -184,6 +279,15 @@
                     <img srcset="./media/home/Rectangle8/Layer8@2x.jpg 2x, ./media/home/Rectangle8/Layer8@3x.jpg 3x"
                         src="./media/home/Rectangle8/Layer8@1x.jpg" alt="Layer">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -193,6 +297,15 @@
                     <img srcset="./media/home/Rectangle9/Layer9@2x.jpg 2x, ./media/home/Rectangle9/Layer9@3x.jpg 3x"
                         src="./media/home/Rectangle9/Layer9@1x.jpg" alt="Layer">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -202,6 +315,15 @@
                     <img srcset="./media/home/Rectangle10/Layer10@2x.jpg 2x, ./media/home/Rectangle10/Layer10@3x.jpg 3x"
                         src="./media/home/Rectangle10/Layer10@1x.jpg" alt="Layer">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -211,6 +333,15 @@
                     <img srcset="./media/home/Rectangle11/Layer11@2x.jpg 2x, ./media/home/Rectangle11/Layer11@3x.jpg 3x"
                         src="./media/home/Rectangle11/Layer11@1x.jpg" alt="Layer">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
             <div class="gallery-item">
                 <picture>
@@ -220,153 +351,187 @@
                     <img srcset="./media/home/Rectangle12/Layer12@2x.jpg 2x, ./media/home/Rectangle12/Layer12@3x.jpg 3x"
                         src="./media/home/Rectangle12/Layer12@1x.jpg" alt="Layer">
                 </picture>
+                <div class="gallery-zoom">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search-plus"
+                        class="svg-inline--fa fa-search-plus fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z">
+                        </path>
+                    </svg>
+                </div>
             </div>
         </div>
         <div class="projects-button">
             <button>browse more</button>
         </div>
     </section>
+    <div class="container">
+        <section class="testimonials">
+    <div class="section-header">
+        <h3>testimonials</h3>
+    </div>
+    <div class="slider">
+        <div>
+            <div class="slider_item">
+                <div class="slider-header">
+                    <img src="./media/home/nescafe.png" alt="nescafe">
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters.</p>
+            </div>
+        </div>
+        <div>
+            <div class="slider_item">
+                <div class="slider-header">
+                    <img src="./media/home/daytona.png" alt="daytona">
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters.</p>
+            </div>
+        </div>
+        <div>
+            <div class="slider_item">
+                <div class="slider-header">
+                    <img src="./media/home/heineken.png" alt="heineken">
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters.</p>
+            </div>
+        </div>
+        <div>
+            <div class="slider_item">
+                <div class="slider-header">
+                    <img src="./media/home/gatorade.png" alt="gatorade">
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters.</p>
+            </div>
+        </div>
+        <div>
+            <div class="slider_item">
+                <div class="slider-header">
+                    <img src="./media/home/swissart.png" alt="swissart">
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters.</p>
+            </div>
+        </div>
+        <div>
+            <div class="slider_item">
+                <div class="slider-header">
+                    <img src="./media/home/kellogss.png" alt="kellogss">
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters.</p>
+            </div>
+        </div>
 
-    <section class="testimonials">
-        <div class="testimonials-header">
-            <h3>testimonials</h3>
-            <span></span>
-        </div>
-        <div class="slider">
-            <div>
-                <div class="slider_item">
-                    <div class="slider-header">
-                        <img src="./media/home/nescafe.png" alt="nescafe">
-                    </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters.</p>
-                </div>
-            </div>
-            <div>
-                <div class="slider_item">
-                    <div class="slider-header">
-                        <img src="./media/home/daytona.png" alt="daytona">
-                    </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters.</p>
-                </div>
-            </div>
-            <div>
-                <div class="slider_item">
-                    <div class="slider-header">
-                        <img src="./media/home/heineken.png" alt="heineken">
-                    </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters.</p>
-                </div>
-            </div>
-            <div>
-                <div class="slider_item">
-                    <div class="slider-header">
-                        <img src="./media/home/gatorade.png" alt="gatorade">
-                    </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters.</p>
-                </div>
-            </div>
-            <div>
-                <div class="slider_item">
-                    <div class="slider-header">
-                        <img src="./media/home/swissart.png" alt="swissart">
-                    </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters.</p>
-                </div>
-            </div>
-            <div>
-                <div class="slider_item">
-                    <div class="slider-header">
-                        <img src="./media/home/kellogss.png" alt="kellogss">
-                    </div>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <div class="brands">
-        <div class="brands-logo">
-            <img src="./media/home/nescafe.png" alt="nescafe">
-        </div>
-        <div class="brands-logo">
-            <img src="./media/home/daytona.png" alt="daytona">
-        </div>
-        <div class="brands-logo">
-            <img src="./media/home/heineken-mini.png" alt="heineken">
-        </div>
-        <div class="brands-logo">
-            <img src="./media/home/gatorade.png" alt="gatorade">
-        </div>
-        <div class="brands-logo">
-            <img src="./media/home/swissart.png" alt="swissart">
-        </div>
-        <div class="brands-logo">
-            <img src="./media/home/kellogss.png" alt="kellogss">
+    </div>
+</section>
+    </div>
+    <div class="container">
+        <div class="container-brands">
+            <section class="brands">
+    <div class="brands-logo">
+        <img src="./media/home/nescafe.png" alt="nescafe">
+    </div>
+    <div class="brands-logo">
+        <img src="./media/home/daytona.png" alt="daytona">
+    </div>
+    <div class="brands-logo">
+        <img src="./media/home/heineken-mini.png" alt="heineken">
+    </div>
+    <div class="brands-logo">
+        <img src="./media/home/gatorade.png" alt="gatorade">
+    </div>
+    <div class="brands-logo">
+        <img src="./media/home/swissart.png" alt="swissart">
+    </div>
+    <div class="brands-logo">
+        <img src="./media/home/kellogss.png" alt="kellogss">
+    </div>
+</section>
         </div>
     </div>
-
+    <div class="map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6836.656061612952!2d31.380521495704738!3d31.04496639714876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1604270564948!5m2!1sru!2sby"></iframe>
+</div>
     <footer>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6836.656061612952!2d31.380521495704738!3d31.04496639714876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1604270564948!5m2!1sru!2sby"></iframe>
-        </div>
-        <div class="footer-items">
-            <div class="copyright">
-                <p>Copyright © Outstrap free template <a href="#">RaVEN</a>  2015, All rights reserved </p>
-            </div>
-            <div class="social">
-                <ul>
-                    <li><a href="#">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
-                    </a></li>
-                    <li><a href="#">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-                      </a></li>
-                    <li><a href="#">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g" class="svg-inline--fa fa-google-plus-g fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path></svg>
-                      </a></li>
-                    <li><a href="#">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
-                    </a></li>
-                    <li><a href="#">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                           <path d="M10.667,0C4.779,0,0,4.779,0,10.667V96c0,5.888,4.779,10.667,10.667,10.667c217.621,0,394.667,177.045,394.667,394.667
-                               c0,5.888,4.779,10.667,10.667,10.667h85.333c5.888,0,10.667-4.779,10.667-10.667C512,224.896,287.104,0,10.667,0z"/>
-                           <path d="M10.667,170.667C4.779,170.667,0,175.445,0,181.333v85.333c0,5.888,4.779,10.667,10.667,10.667
-                               c123.52,0,224,100.48,224,224c0,5.888,4.779,10.667,10.667,10.667h85.333c5.888,0,10.667-4.779,10.667-10.667
-                               C341.333,318.997,193.003,170.667,10.667,170.667z"/>
-                           <circle cx="74.667" cy="437.333" r="74.667"/>
-                   </svg>
-                   
-                      </a></li>
-                </ul>
-            </div>
-            <div class="up">
-                <button></button>
-            </div>
-        </div>
-    </footer>
+    <div class="footer-items">
+        <p>Copyright © Outstrap free template <a href="#">RaVEN</a> 2015, All rights reserved </p>
+        <ul>
+            <li><a href="#">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
+                        class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512">
+                        <path
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                        </path>
+                    </svg>
+                </a></li>
+            <li><a href="#">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                        class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                        </path>
+                    </svg>
+                </a></li>
+            <li><a href="#">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g"
+                        class="svg-inline--fa fa-google-plus-g fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512">
+                        <path
+                            d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z">
+                        </path>
+                    </svg>
+                </a></li>
+            <li><a href="#">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube"
+                        class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512">
+                        <path
+                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                        </path>
+                    </svg>
+                </a></li>
+            <li><a href="#">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <path
+                            d="M10.667,0C4.779,0,0,4.779,0,10.667V96c0,5.888,4.779,10.667,10.667,10.667c217.621,0,394.667,177.045,394.667,394.667
+                           c0,5.888,4.779,10.667,10.667,10.667h85.333c5.888,0,10.667-4.779,10.667-10.667C512,224.896,287.104,0,10.667,0z" />
+                        <path d="M10.667,170.667C4.779,170.667,0,175.445,0,181.333v85.333c0,5.888,4.779,10.667,10.667,10.667
+                           c123.52,0,224,100.48,224,224c0,5.888,4.779,10.667,10.667,10.667h85.333c5.888,0,10.667-4.779,10.667-10.667
+                           C341.333,318.997,193.003,170.667,10.667,170.667z" />
+                        <circle cx="74.667" cy="437.333" r="74.667" />
+                    </svg>
+
+                </a></li>
+        </ul>
+        <button>
+            <svg viewBox="0 0 16 16" class="bi bi-chevron-up" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg>
+        </button>
+    </div>
+</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="

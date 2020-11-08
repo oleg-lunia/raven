@@ -1,78 +1,69 @@
 $color: #99286b;
 
 header {
-    padding-top: 78px;
-    max-width: 1170px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-family: "OpenSans", sans-serif;
+        font-size: 44px;
+        text-transform: uppercase;
+        img {
+            height: 30px;
+            width: 30px;
+            padding-right: 10px;
+        }
+    }
 
-    .menu {
-
-        nav {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            list-style: none;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            margin: 0;
 
-            .logo {
-                text-decoration: none;
-                color: white;
-                font-family: "OpenSans", sans-serif;
-                font-size: 44px;
-                text-transform: uppercase;
-                img {
-                    height: 30px;
-                    width: 30px;
-                    padding-right: 10px;
+            li {
+                margin-left: 8px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: "OpenSans-Bold",sans-serif;
+                    font-size: 15px;
+                    padding: 8px 25px 8px 25px;
+                    transition: 0.5s;
                 }
-            }
-
-            .list {
-                display: flex;
-                ul {
-                    list-style: none;
-                    display: flex;
-                    align-items: center;
-                    margin: 0;
-
-                    li {
-                        margin-left: 8px;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                            font-family: "OpenSans-Bold",sans-serif;
-                            font-size: 15px;
-                            padding: 8px 25px 8px 25px;
-                            transition: 0.5s;
-                        }
-                        a:hover,
-                        a:active {
-                            border-radius: 3px;
-                            background-color: $color;
-                        }
-                    }
-                }
-                .menu-form {
-                    .menu-search {
-                        width: 40px;
-                        height: 40px;
-                        border: none;
-                        background: none;
-                        background-image: url("../media/home/icon/search.svg");
-                        background-repeat: no-repeat;
-                        background-size: 16px;
-                        background-position: right;
-                        color: white;
-                        transition: 0.5s;
-                    }
-                    .menu-search:hover,
-                    .menu-search:focus {
-                        width: 200px;
-                        border-radius: 10px;
-                        border: solid 1px #fff;
-                        box-shadow: none;
-                        outline: none;
-                    }
+                a:hover,
+                a:active {
+                    border-radius: 3px;
+                    background-color: $color;
                 }
             }
         }
-    }
+        .menu-form {
+            .menu-search {
+                width: 40px;
+                height: 40px;
+                border: none;
+                background: none;
+                background-image: url("../media/home/icon/search.svg");
+                background-repeat: no-repeat;
+                background-size: 16px;
+                background-position: right;
+                color: white;
+                transition: 0.5s;
+            }
+            .menu-search:focus {
+                width: 200px;
+                border-radius: 10px;
+                border: solid 1px #fff;
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }      
 }

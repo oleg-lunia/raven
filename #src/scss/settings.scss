@@ -6,17 +6,50 @@ body {
     color: #323232;
 }
 
+$color: #99286b;
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
 h2,
-h3 {
+h3,
+h4 {
     text-transform: uppercase;
 }
 
 h3 {
     font-size: 24px;
+    font-weight: 500;
+}
+
+p {
+    text-align: center;
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 190%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 2px;
+        width: 70px;
+        background-color: #99286b;
+    }
 }
 
 button {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    outline: none;
 }

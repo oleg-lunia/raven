@@ -628,6 +628,547 @@ footer {
     }
 }
 
-// .projects-brands {
-//     margin-top: 125px;
-// }
+// НАСТРОЙКА СТРАНИЦЫ CONTACT!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.contact {
+    padding-top: 48px;
+    padding-bottom: 104px;
+    p {
+        margin-top: 60px;
+    }
+}
+
+.contact-block {
+    display: flex;
+    margin-top: 76px;
+    h5 {
+        font-family: "OpenSans-Bold", sans-serif;
+        font-size: 22px;
+        color: $color;
+        margin: 0;
+        font-weight: 900;
+    }
+    .contact-form {
+        h5 {
+            margin-bottom: 38px;
+        }
+    }
+    form {
+        width: 670px;
+        display: flex;
+        flex-direction: column;
+        input {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .form-text {
+            input {
+                width: 100%;
+                height: 54px;
+                margin-bottom: 8px;
+                border: solid 1px #e6e6e6;
+                border-radius: 3px;
+                padding-left: 40px;
+            }
+        }
+        .form-submit {
+            text-align: end;
+        }
+        textarea {
+            resize: none;
+            height: 214px;
+            box-sizing: border-box;
+            border: solid 1px #e6e6e6;
+            border-radius: 3px;
+            outline: none;
+            padding-left: 40px;
+            padding-top: 16px;
+            
+        }
+    }
+    .form-submit {
+        input {
+            background-color: $color;
+            font-size: 13px;
+            color: #fff;
+            border: none;
+            width: 112px;
+            height: 40px;
+            border-radius: 3px;
+            margin-top: 16px;
+            cursor: pointer;
+        }
+        input:hover {
+            background-color:  #99286bc9;
+        }
+    }
+    .contact-content {
+        padding-left: 30px;
+        h5 {
+            margin-bottom: 30px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            font-size: 14px;
+        }
+        .contact-item {
+            margin-top: 48px;
+            p:first-child {
+                font-weight: 900;
+            }
+            span {
+                text-decoration: underline;
+            }
+            p:last-child {
+                padding-left: 48px;
+            }
+        }
+    }
+}
+
+// НАСТРОЙКА СТРАНИЦЫ BLOG!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.blog {
+    display: flex;
+    padding-top: 98px;
+    .blog-container {
+        margin: 0 30px 138px 0;
+    }
+    .blog-item {
+        display: flex;
+        position: relative;
+        margin-bottom: 90px;
+    }
+    article.blog-item::before {
+        content: "";
+        position: absolute;
+        width: 800px;
+        height: 1px;
+        background-color:  #b5b5b5;
+        bottom: -47px;
+        left: 70px;
+    }
+    .time-item {
+        background-color: $color;
+        width: 62px;
+        height: 68px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 27px;
+        }
+        p {
+            font-size: 11px;
+            text-transform: uppercase;
+            line-height: 1.15;
+        }
+    }
+    .blog-content {
+        max-width: 800px;
+        h2 {
+            font-size: 22px;
+            font-family: "OpenSans-Bold", sans-serif;
+            color: $color;
+            text-transform: none;
+            margin: 0;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            margin-top: 14px
+        }
+        li {
+            border-right: solid 1px #b5b5b5;
+            padding-right: 8px;
+            box-sizing: border-box;
+            height: 11px;
+            display: flex;
+            margin-right: 9px;
+        }
+        li:last-child {
+            border: none;
+        }
+        a {
+            text-decoration: none;
+            color: #b5b5b5;
+            font-size: 11px;
+        }
+        p {
+            text-align: justify;
+            font-size: 14px;
+            margin-top: 22px;
+        }
+        button {
+            background-color: $color;
+            color: #fff;
+            box-sizing: border-box;
+            width: 110px;
+            height: 38px;
+            border-radius: 3px;
+            margin-top: 36px;
+            font-size: 13px;
+        }
+        button:hover {
+            background-color: #99286bc9;
+        }
+    }
+}
+.blog-aside {
+    width: 100%;
+    max-width: 270px;
+    form {
+        position: relative;
+        svg {
+            position: absolute;
+            top: 18px;
+            right: 30px;
+            height: 15px;
+        }
+    }
+    input {
+        width: 100%;
+        height: 55px;
+        border: solid 1px #b5b5b5;
+        border-radius: 3px;
+        outline: none;
+        padding-left: 27px;
+    }
+}
+
+.blog-categories {
+    padding-top: 44px;
+    h4 {
+        text-transform: capitalize;
+        margin: 0;
+    }
+    ul {
+        list-style-image: url("../media/blog/icons/categories-right.svg");
+        padding-left: 16px;
+        margin-top: 10px;
+    }
+    li {
+        border-bottom: solid 1px #b5b5b5;
+        padding: 15px 0 14px 14px;
+    }
+    li:last-child {
+        border: none;
+    }
+    a {
+        text-decoration: none;
+        color: #b5b5b5;
+        font-size: 14px;
+        padding: 2px 0;
+    }
+}
+.blog-tweets {
+    padding-top: 30px;
+    h4 {
+        margin: 0;
+        text-transform: none;
+    }
+    .tweets-item {
+        display: flex;
+        margin-top: 22px;
+    }
+    svg {
+        fill: #b5b5b5;
+        height: 22px;
+        margin-top: 2px;
+    }
+    p {
+        flex-shrink: 6;
+        text-align: justify;
+        color: #b5b5b5;
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    a {
+        text-decoration: none;
+        color: #939393;
+    }
+}
+
+.btn-grop {
+    padding-left: 70px;
+    button {
+        border: solid 1px #d0d0d0;
+        border-radius: 3px;
+        font-size: 14px;
+        font-family: 'OpenSans', sans-serif;
+        height: 46px;
+        width: 38px;
+        color: #b5b5b5;
+        box-sizing: border-box;
+    }
+    button:last-child {
+        border: none;
+        width: 76px;
+        svg {
+            transform: translate(18%, 18%);
+        }
+    }
+    button:first-child {
+        background-color: #d0d0d0;
+        color: white;
+    }
+}
+
+
+// НАСТРОЙКА СТРАНИЦЫ СТАТЬИ БЛОГА!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.article-blog {
+    display: flex;
+    padding: 80px 0 74px 0;
+    .article-container {
+        margin-right: 30px;
+    }
+    .article-item {
+        max-width: 870px;
+        h2 {
+            font-size: 22px;
+            font-family: "OpenSans-Bold", sans-serif;
+            color: $color;
+            text-transform: none;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 10px 0px 20px 0;
+        }
+        li {
+            border-right: solid 1px #b5b5b5;
+            padding-right: 8px;
+            box-sizing: border-box;
+            height: 11px;
+            display: flex;
+            margin-right: 9px;
+        }
+        li:last-child {
+            border: none;
+        }
+        a {
+            text-decoration: none;
+            color: #b5b5b5;
+            font-size: 11px;
+        }
+        iframe {
+            height: 437px;
+            width: 100%;
+        }
+        p {
+            text-align: justify;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        span {
+            font-weight: 900;
+        }
+    }
+    .article-social {
+        width: 100%;
+        height: 60px;
+        background-color: $color;
+        display: flex;
+        align-items: center;
+        margin-top: 38px;
+        p {
+            text-transform: capitalize;
+            margin: 0 0 0 38px;
+            font-size: 14px;
+            color: #fff;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            padding-left: 22px;
+        }
+        li {
+            margin-right: 10px;
+        }
+        svg {
+            height: 20px;
+            fill: #fff;
+            transition: 0.5s;
+        }
+        svg:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.comments {
+    .new-comments {
+        position: relative;
+        padding-left: 72px;
+        margin-bottom: 40px;
+    }
+    h6 {
+        font-size: 18px;
+        font-family: "OpenSans-Bold", sans-serif;
+        color: $color;
+        text-transform: capitalize;
+        margin: 42px 0 30px 0;
+    }
+    .header-comments {
+        display: flex;
+        align-items: center;
+        svg {
+            fill: #b5b5b5;
+            height: 14px;
+        }
+        p {
+            margin: 0 20px 0 10px;
+            font-size: 11px;
+            color:  #b5b5b5;
+        }
+        span {
+            font-weight: 900;
+            font-size: 14px;
+        }
+    }
+    p {
+        font-size: 14px;
+        margin: 0;
+        text-align: start;
+    }
+    .text-comments {
+        margin-top: 9px;
+        padding-left: 21px;
+        color:  #b5b5b5;
+    }
+    .new-comments::after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 70px;
+        height: 1px;
+        width: 800px;
+        background-color: #b5b5b5;
+    }
+    h5 {
+        font-size: 18px;
+        font-family: "OpenSans-Bold", sans-serif;
+        color: $color;
+        margin: 75px 0 20px 0;
+
+    }
+    textarea {
+        resize: none;
+        height: 177px;
+        width: 100%;
+        box-sizing: border-box;
+        border: solid 1px #b5b5b5;
+        border-radius: 3px;
+        outline: none;
+        padding-left: 40px;
+        padding-top: 16px;
+        
+    }
+    .form-comments {
+        text-align: end;
+        input {
+            background-color: $color;
+            font-size: 13px;
+            color: #fff;
+            border: none;
+            width: 110px;
+            height: 38px;
+            border-radius: 3px;
+            margin-top: 14px;
+            cursor: pointer;
+        }
+        input:hover {
+            background-color: #99286bc9;
+        }
+    }
+}
+.top-article {
+    margin-top: 68px;
+    h4 {
+        margin: 0;
+        text-transform: none;
+    }
+    .top-article-item {
+        display: flex;
+        margin-top: 20px;
+        position: relative;
+    }
+    .top-article-item::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #b5b5b5;
+        bottom: 0;
+        left: 0;
+    }
+    .top-article-img {
+        width: 92px;
+        height: 66px;
+        margin-right: 8px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .top-article-header {
+        max-width: 170px;
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            a {
+                font-size: 10px;
+                color: #b5b5b5;
+            }
+        }
+        li {
+            border-right: solid 1px #b5b5b5;
+            height: 9px;
+            display: flex;
+            padding-right: 8px;
+            margin-right: 8px;
+        }
+        li:last-child {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            color: #000000;
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

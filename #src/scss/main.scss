@@ -58,6 +58,13 @@
         }
     }
 }
+@media(max-width: 1165px){
+    .preview {
+        .container-header {
+            padding-top: 15px;
+        }
+    }    
+}
 
 // Настройка блока OUR Services
 
@@ -74,10 +81,12 @@
     }
     .services-block {
         display: flex;
+        align-items: center;
         margin-top: 34px;
         img {
             max-width: 372px;
             margin-right: 28px;
+            object-fit: contain;
         }
         .services-group{
             display: flex;
@@ -110,6 +119,48 @@
     }
 }
 
+@media (min-width: 765px) and (max-width: 1179px){
+    .services {
+        .services-block {
+            justify-content: center;
+            .services-group {
+                max-width: 509px;
+                justify-content: space-around;
+                .services-item {
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .services {
+        .services-block {
+            img {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 764px){
+    .services {
+        .services-block {
+            justify-content: center;
+            flex-direction: column;
+            .services-group {
+                max-width: 509px;
+                justify-content: space-around;
+                margin-top: 20px;
+                .services-item {
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+}
+
 // Настройка блока OUR projects
 
 .projects {
@@ -121,8 +172,8 @@
     .projects-gallery {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 80px;
-        margin-bottom: 55px;
+        justify-content: center;
+        margin: 80px auto 55px auto;
         .gallery-item {
             height: 240px;
             width: 240px;
@@ -176,6 +227,14 @@
         }
     }
     
+}
+
+@media(max-width: 1439px){
+    .projects {
+        .projects-gallery {
+            max-width: 1199px;
+        }
+    }
 }
 
 // Настройка блока OUR testimonials
@@ -240,6 +299,17 @@
     }
 }
 
+@media(max-width: 1239px){
+    .testimonials {
+        .slider .slick-next {
+            right: 0;
+        }
+        .slider .slick-prev {
+            left: 0;
+        }
+    }
+}
+
 // Настройка блока с картинками брендами
 .container-brands {
     margin-top: 125px;
@@ -248,6 +318,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     cursor: pointer;
     .brands-logo {
         width: 170px;
@@ -261,6 +332,14 @@
         background-color: $color;
         opacity: 0.7;
         transition: 0.7s;
+    }
+}
+
+@media(max-width: 1019px){
+    .brands {
+        margin: 0 auto;
+        max-width: 679px;
+        justify-content: space-around;
     }
 }
 

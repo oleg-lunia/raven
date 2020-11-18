@@ -1040,6 +1040,7 @@ footer {
         margin-top: 34px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         .page-projects-item {
             height: 292px;
             width: 292px;
@@ -1047,6 +1048,18 @@ footer {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+            }
+        }
+    }
+}
+@media(max-width: 899px) {
+    .page-projects {
+        p {
+            padding: 0 15px;
+        }
+        .button-projects {
+            button {
+                margin-bottom: 10px;
             }
         }
     }
@@ -1154,27 +1167,51 @@ footer {
     }
 }
 
+@media (min-width: 938px) and (max-width: 1185px) {
+    .contact {
+        padding: 48px 10px 104px 10px;
+    }
+}
+@media (min-width: 300px) and (max-width: 937px) {
+    .contact {
+        padding: 48px 10px 104px 10px;
+    }
+    .contact-block {
+        flex-direction: column-reverse;
+        form {
+            max-width: 670px;
+            width: 100%;
+        }
+        .contact-content {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
 // НАСТРОЙКА СТРАНИЦЫ BLOG!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .blog {
     display: flex;
     padding-top: 98px;
+    padding-bottom: 118px;
     .blog-container {
-        margin: 0 30px 138px 0;
+        margin: 0 30px 0 0;
     }
     .blog-item {
         display: flex;
         position: relative;
-        margin-bottom: 90px;
+        margin-bottom: 102px;
     }
     article.blog-item::before {
         content: "";
         position: absolute;
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
         height: 1px;
         background-color:  #b5b5b5;
-        bottom: -47px;
+        bottom: -55px;
         left: 70px;
     }
     .time-item {
@@ -1198,6 +1235,11 @@ footer {
     }
     .blog-content {
         max-width: 800px;
+        img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+        }
         h2 {
             font-size: 22px;
             font-family: "OpenSans-Bold", sans-serif;
@@ -1233,18 +1275,17 @@ footer {
             text-align: justify;
             font-size: 14px;
             margin-top: 22px;
+            margin-bottom: 45px;
         }
-        button {
+        .article-btn {
             background-color: $color;
             color: #fff;
             box-sizing: border-box;
-            width: 110px;
-            height: 38px;
             border-radius: 3px;
-            margin-top: 36px;
             font-size: 13px;
+            padding: 10px 25px;
         }
-        button:hover {
+        .article-btn:hover {
             background-color: #99286bc9;
         }
     }
@@ -1324,31 +1365,79 @@ footer {
     }
 }
 
-.btn-grop {
+.page-numbers {
     padding-left: 70px;
-    button {
+    list-style: none;
+    display: flex;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: solid 1px #d0d0d0;
         border-radius: 3px;
         font-size: 14px;
-        font-family: 'OpenSans', sans-serif;
         height: 46px;
         width: 38px;
-        color: #b5b5b5;
         box-sizing: border-box;
+        margin-right: 5px;
+        a {
+            color:  #d0d0d0;
+            text-decoration: none;
+        }
     }
-    button:last-child {
+    li:last-child {
         border: none;
         width: 76px;
         svg {
             transform: translate(18%, 18%);
         }
     }
-    button:first-child {
+    li:first-child {
         background-color: #d0d0d0;
-        color: white;
+        a {
+            color: #fff;
+        }
     }
 }
-
+@media (min-width: 1190px) and (max-width: 1185px) {
+    .blog {
+        padding: 98px 10px 118px 10px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1189px) {
+    .blog {
+        padding: 98px 10px 118px 10px;
+        .time-item {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        article.blog-item::before {
+            left: 0;
+        }
+    }
+}
+@media(max-width: 599px) {
+    .blog {
+        padding: 98px 10px 118px 10px;
+        flex-direction: column;
+        align-items: center;
+        .blog-container {
+            margin: 0;
+        }
+        .time-item {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        article.blog-item::before {
+            left: 0;
+        }
+    }
+    .blog-aside {
+        margin-top: 50px;
+    }
+}
 
 // НАСТРОЙКА СТРАНИЦЫ СТАТЬИ БЛОГА!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

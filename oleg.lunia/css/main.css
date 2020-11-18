@@ -2409,7 +2409,6 @@ footer .footer-items button:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-top: 35px;
   }
 
   .fixed-page {
@@ -2805,7 +2804,7 @@ footer .footer-items button:hover {
   }
 
   .believe .believe-group .believe-content {
-    padding: 0 5px;
+    padding: 0 5px 10px 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

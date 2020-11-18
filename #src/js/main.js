@@ -6,7 +6,7 @@ $('.slider').slick({
 
 document.querySelector('.menu-burger__header').addEventListener('click', function(){
     document.querySelector('.menu-burger__header').classList.toggle('open-menu');
-    document.querySelector('.header-nav').classList.toggle("open-menu");
+    document.querySelector('.header-nav-ul').classList.toggle("open-menu");
 })
 
 

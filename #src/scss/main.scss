@@ -314,6 +314,10 @@
         top: 40%;
     }
 }
+.slick-dots li button {
+    background-color: white;
+    border-radius: 50%;
+}
 
 @media(max-width: 1239px){
     .testimonials {

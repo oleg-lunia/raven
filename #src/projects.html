@@ -25,14 +25,14 @@
                 looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
             <div class="button-projects">
-                <button autofocus>browse all</button>
-                <button>filter (1)</button>
-                <button>filter (2)</button>
-                <button>filter (3)</button>
-                <button>filter (4)</button>
+                <button class="active" id="all">browse all</button>
+                <button id="v1">filter (1)</button>
+                <button id="v2">filter (2)</button>
+                <button id="v3">filter (3)</button>
+                <button id="v4">filter (4)</button>
             </div>
             <div class="page-projects-gallery">
-                <div class="page-projects-item">
+                <div class="page-projects-item v4" data-var="v4">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle6/Rectangle6@1x.webp 1x, ./media/home/Rectangle6/Rectangle6@2x.webp 2x, ./media/home/Rectangle6/Rectangle6@3x.webp 3x"
@@ -41,7 +41,7 @@
                             src="./media/home/Rectangle6/Rectangle6@1x.jpg" alt="Rectangle">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v3" data-var="v3">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle1/Rectangle1@1x.webp 1x, ./media/home/Rectangle1/Rectangle1@2x.webp 2x, ./media/home/Rectangle1/Rectangle1@3x.webp 3x"
@@ -50,7 +50,7 @@
                             src="./media/home/Rectangle1/Rectangle1@1x.jpg" alt="Rectangle">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v2" data-var="v2">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle2/Rectangle2@1x.webp 1x, ./media/home/Rectangle2/Rectangle2@2x.webp 2x, ./media/home/Rectangle2/Rectangle2@3x.webp 3x"
@@ -59,7 +59,7 @@
                             src="./media/home/Rectangle2/Rectangle2@1x.jpg" alt="Rectangle">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v4" data-var="v4">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle12/Layer12@1x.webp 1x, ./media/home/Rectangle12/Layer12@2x.webp 2x, ./media/home/Rectangle12/Layer12@3x.webp 3x"
@@ -68,7 +68,7 @@
                             src="./media/home/Rectangle12/Layer12@1x.jpg" alt="Layer">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v1" data-var="v1">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle5/Rectangle5@1x.webp 1x, ./media/home/Rectangle5/Rectangle5@2x.webp 2x, ./media/home/Rectangle5/Rectangle5@3x.webp 3x"
@@ -77,7 +77,7 @@
                             src="./media/home/Rectangle5/Rectangle5@1x.jpg" alt="Rectangle">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v2" data-var="v2">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle4/Rectangle4@1x.webp 1x, ./media/home/Rectangle4/Rectangle4@2x.webp 2x, ./media/home/Rectangle4/Rectangle4@3x.webp 3x"
@@ -86,7 +86,7 @@
                             src="./media/home/Rectangle4/Rectangle4@1x.jpg" alt="Rectangle">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v4" data-var="v4">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle10/Layer10@1x.webp 1x, ./media/home/Rectangle10/Layer10@2x.webp 2x, ./media/home/Rectangle10/Layer10@3x.webp 3x"
@@ -95,7 +95,7 @@
                             src="./media/home/Rectangle10/Layer10@1x.jpg" alt="Layer">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v1" data-var="v1">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle11/Layer11@1x.webp 1x, ./media/home/Rectangle11/Layer11@2x.webp 2x, ./media/home/Rectangle11/Layer11@3x.webp 3x"
@@ -104,7 +104,7 @@
                             src="./media/home/Rectangle11/Layer11@1x.jpg" alt="Layer">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v3" data-var="v3">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle7/Layer7@1x.webp 1x, ./media/home/Rectangle7/Layer7@2x.webp 2x, ./media/home/Rectangle7/Layer7@3x.webp 3x"
@@ -113,7 +113,7 @@
                             src="./media/home/Rectangle7/Layer7@1x.jpg" alt="Layer">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v3" data-var="v3">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle8/Layer8@1x.webp 1x, ./media/home/Rectangle8/Layer8@2x.webp 2x, ./media/home/Rectangle8/Layer8@3x.webp 3x"
@@ -122,7 +122,7 @@
                             src="./media/home/Rectangle8/Layer8@1x.jpg" alt="Layer">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v1" data-var="v1">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle3/Rectangle3@1x.webp 1x, ./media/home/Rectangle3/Rectangle3@2x.webp 2x, ./media/home/Rectangle3/Rectangle3@3x.webp 3x"
@@ -131,7 +131,7 @@
                             src="./media/home/Rectangle3/Rectangle3@1x.jpg" alt="Rectangle">
                     </picture>
                 </div>
-                <div class="page-projects-item">
+                <div class="page-projects-item v2" data-var="v2">
                     <picture>
                         <source
                             srcset="./media/home/Rectangle9/Layer9@1x.webp 1x, ./media/home/Rectangle9/Layer9@2x.webp 2x, ./media/home/Rectangle9/Layer9@3x.webp 3x"

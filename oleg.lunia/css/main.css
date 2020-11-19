@@ -1555,7 +1555,7 @@ footer .footer-items button:hover {
   padding: 16px 44px 16px 44px;
 }
 
-.page-projects .button-projects button:focus {
+.page-projects .button-projects .active {
   background-color: transparent;
   color: #99286b;
 }
@@ -1582,6 +1582,10 @@ footer .footer-items button:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hide {
+  display: none;
 }
 
 .contact {

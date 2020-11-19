@@ -1047,7 +1047,7 @@ footer {
         button:first-child {
             padding: 16px 44px 16px 44px;
         }
-        button:focus {
+        .active {
             background-color: transparent;
             color: $color;
         }
@@ -1067,6 +1067,9 @@ footer {
             }
         }
     }
+}
+.hide {
+    display: none;
 }
 @media(max-width: 899px) {
     .page-projects {

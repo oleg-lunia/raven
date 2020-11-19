@@ -1119,8 +1119,17 @@ button {
 }
 
 .slick-dots li button {
-  background-color: white;
+  background-color: #939393;
   border-radius: 50%;
+}
+
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+  background-color: #99286b;
+}
+
+.slick-dots li button:before {
+  content: "";
 }
 
 .container-brands {

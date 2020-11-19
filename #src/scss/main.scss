@@ -315,8 +315,15 @@
     }
 }
 .slick-dots li button {
-    background-color: white;
+    background-color: #939393;
     border-radius: 50%;
+}
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    background-color: $color;
+}
+.slick-dots li button:before {
+    content: "";
 }
 
 @media(max-width: 1239px){

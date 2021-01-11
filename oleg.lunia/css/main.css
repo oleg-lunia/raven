@@ -930,6 +930,7 @@ button {
 .services .services-block .services-group .services-item {
   height: 192px;
   width: 170px;
+  margin-bottom: 10px;
   border: solid 1px #e6e6e6;
   border-radius: 3px;
   -webkit-box-sizing: border-box;
@@ -982,8 +983,7 @@ button {
 }
 
 .projects .projects-gallery .gallery-item {
-  height: 240px;
-  width: 240px;
+  width: 16.66%;
   position: relative;
 }
 
@@ -998,8 +998,8 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  height: 240px;
-  width: 240px;
+  height: 100%;
+  width: 100%;
   background-color: #99286b;
   opacity: 0.7;
   cursor: pointer;
@@ -1302,6 +1302,7 @@ footer .footer-items button:hover {
   margin: 0 47px 0 18px;
   -o-object-fit: contain;
      object-fit: contain;
+  max-width: 372px;
 }
 
 .believe .believe-group .believe-content h3 {
@@ -2291,12 +2292,6 @@ footer .footer-items button:hover {
   color: #000000;
 }
 
-@media (max-width: 1439px) {
-  .projects .projects-gallery {
-    max-width: 1199px;
-  }
-}
-
 @media (max-width: 1239px) {
   .testimonials .slider .slick-next {
     right: 0;
@@ -2544,6 +2539,12 @@ footer .footer-items button:hover {
   }
 }
 
+@media (max-width: 499px) {
+  .projects .projects-gallery .gallery-item {
+    width: 50%;
+  }
+}
+
 @media (max-width: 461px) {
   footer .footer-items {
     position: relative;
@@ -2748,6 +2749,12 @@ footer .footer-items button:hover {
   }
 }
 
+@media (min-width: 500px) and (max-width: 800px) {
+  .projects .projects-gallery .gallery-item {
+    width: 33.3%;
+  }
+}
+
 @media (min-width: 462px) and (max-width: 559px) {
   footer .footer-items {
     position: relative;
@@ -2815,10 +2822,14 @@ footer .footer-items button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .believe .believe-group img {
     margin: 0;
+    max-width: 300px;
   }
 
   .believe .believe-group .believe-content {
